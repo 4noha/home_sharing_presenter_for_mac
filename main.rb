@@ -2,7 +2,7 @@
 require 'appscript'
 
 itunes = Appscript.app("iTunes")
-r = Regexp.new("PowerPoint|Impress|Chrome")
+r = Regexp.new("PowerPoint|Impress|Chrome|Viewer|Preview")
 
 while true
   active_app = `osascript -e 'tell application "System Events" \n set front_app to name of (path to frontmost application) \n end tell'`
